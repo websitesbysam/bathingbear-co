@@ -23,23 +23,53 @@
       color: inherit;
     }
 
-    header {
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid #f0d8d0;
-    }
+   header {
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #f0d8d0;
+}
 
-    .navbar {
-      max-width: 1200px;
-      margin: auto;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo h1 {
+  font-size: 1.7rem;
+  color: #7a4e59;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.logo p {
+  font-size: 0.82rem;
+  color: #b27c88;
+  letter-spacing: 1px;
+  margin-top: 3px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-weight: 500;
+  color: #6d5860;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  font-size: 0.98rem;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #7a4e59;
+}
 
     .collections-wrapper {
   position: relative;
@@ -96,25 +126,6 @@
     max-width: 240px;
   }
 }
-
-    .logo h1 {
-      font-size: 1.7rem;
-      color: #7a4e59;
-      font-weight: 700;
-    }
-
-    .logo p {
-      font-size: 0.85rem;
-      color: #b27c88;
-      letter-spacing: 1px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      font-weight: 500;
-      color: #6d5860;
-    }
 
     .hero {
       min-height: 90vh;
@@ -351,6 +362,34 @@
         grid-template-columns: 1fr;
       }
     }
+
+    @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 14px 18px;
+    gap: 10px;
+  }
+
+  .logo h1 {
+    font-size: 1.35rem;
+  }
+
+  .logo p {
+    display: none;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.92rem;
+  }
+}
+
   </style>
 </head>
 
@@ -513,20 +552,6 @@
         <strong>— Kavya M.</strong>
       </div>
 
-  </section>
-
-  <section id="about">
-    <div class="section-title">
-      <h3>About Us</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sweet polished-skin inspired scrub with a luxe feel.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="section-title">
-      <h3>Contact Us</h3>
-      <p>For orders and inquiries, connect directly on WhatsApp or Instagram.</p>
-    </div>
   </section>
 
   <footer>
