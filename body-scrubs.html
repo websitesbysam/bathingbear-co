@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Body Scrubs | Bathing Bear & Co.</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+    body { background: #fffaf8; color: #4a3a34; }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #f0d8d0;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo h1 { font-size: 1.6rem; color: #7a4e59; }
+    .logo p { font-size: 0.85rem; color: #b27c88; }
+
+    .back-btn {
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #7a4e59;
+      color: white;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 8% 40px;
+      background: linear-gradient(135deg, #ffe6cf, #fff1dc, #ffdfe8);
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      color: #6b3e4d;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #7c646c;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    .products {
+      padding: 70px 8%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      border: 1px solid #f3e1df;
+    }
+
+    .image {
+      height: 260px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-weight: 600;
+      color: #6b4b54;
+    }
+
+    .img1 { background: linear-gradient(135deg, #ffe7b8, #ffd8e4); }
+    .img2 { background: linear-gradient(135deg, #dff5ff, #ffe3d1); }
+    .img3 { background: linear-gradient(135deg, #fff0b6, #ffd9c9); }
+
+    .card h3 {
+      color: #5d3d46;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #876c73;
+      margin-bottom: 14px;
+    }
+
+    .price {
+      display: block;
+      font-weight: 700;
+      color: #7a4e59;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: #7a4e59;
+      color: white;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #7a4e59;
+      color: white;
+      text-align: center;
+      padding: 24px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 900px) {
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>Bathing Bear & Co.</h1>
+      <p>ARTISANAL BODYCARE</p>
+    </div>
+    <a href="index.html" class="back-btn">← Back Home</a>
+  </header>
+
+  <section class="hero">
+    <h2>Body Scrubs</h2>
+    <p>Glow-focused exfoliation with a soft premium aesthetic and playful product presentation.</p>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <div class="image img1">Honey Suckle Kiss</div>
+      <h3>Honey Suckle Kiss</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A sweet polished-skin inspired scrub with a luxe feel.</p>
+      <span class="price">₹XXX</span>
+      <a class="btn" href="https://wa.me/?text=Hey%20i%20would%20like%20to%20order%20Honey%20Suckle%20Kiss.%20Here%20are%20my%20details:%20">Order on WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="image img2">Mist of Ocean</div>
+      <h3>Mist of Ocean</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fresh, airy, and clean with a coastal-inspired mood.</p>
+      <span class="price">₹XXX</span>
+      <a class="btn" href="https://wa.me/?text=Hey%20i%20would%20like%20to%20order%20Mist%20of%20Ocean.%20Here%20are%20my%20details:%20">Order on WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <div class="image img3">Citrus Burst</div>
+      <h3>Citrus Burst</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bright and energetic with a refreshing scrub appeal.</p>
+      <span class="price">₹XXX</span>
+      <a class="btn" href="https://wa.me/?text=Hey%20i%20would%20like%20to%20order%20Citrus%20Burst.%20Here%20are%20my%20details:%20">Order on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Bathing Bear & Co. | Body Scrubs | Made by Samriddhi Bhutani</p>
+  </footer>
+
+</body>
+</html>
